@@ -1,0 +1,13 @@
+{
+    "data": "path_to_data",
+    "epochs": 1,
+    "embed_size": 128,
+    "hidden_size": 128,
+    "lr": 1e-3,
+    "decay_rate": 0.9,
+    "dropout": 0.1,
+    "print_iter": 50,
+    "save_iter": 200,
+    "val_iter": 500,
+    "device": null
+}
