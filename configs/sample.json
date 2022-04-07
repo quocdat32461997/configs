@@ -9,5 +9,8 @@
     "print_iter": 50,
     "save_iter": 200,
     "val_iter": 500,
-    "device": null
+    "device": null,
+    "save_dir": "./ckpt",
+    "model": "sample_model",
+    "pretrained": null
 }
