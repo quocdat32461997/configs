@@ -19,7 +19,6 @@ class Configs(object):
         if self.device is None:
             self.deivce = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
     def from_json(self, configs):
         self.__dict__.update(configs)
         self.args = {k: v for k, v in self.__dict__.items()}  # save args
