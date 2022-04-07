@@ -16,13 +16,9 @@ class Configs(object):
         else:
             raise Exception("Either path or args must be a valid value")
 
-    def to_cuda(self):
-        if torch.cuda.is_available():
-            device = self.device_name if self.device_name is not None else 'cuda:0'
-        else:
-            device = 'cpu'
+        if self.device is None:
+            self.deivce = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-        self.device = torch.device(device)
 
     def from_json(self, configs):
         self.__dict__.update(configs)
